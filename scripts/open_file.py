@@ -10,6 +10,9 @@ import pandas as pd
 def get_date_taken(p):
     return Image.open(p)._getexif()[36867]
 
+# def get_model(p):
+#     return Image.open(p)._getexif().keys()
+
 
 filename = os.listdir("./photo")
 with open('info.csv', mode='a') as csv_file:
