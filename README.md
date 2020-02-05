@@ -1,11 +1,12 @@
 This project is for my summer intern project. 
 
-To run the script, ensure you have these dependencies installed:
+To run the script, ensure you have these dependencies installed(--user maybe not required):
 pip install exifread --user
 pip install piexif --user
 pip install Pillow --user
 pip install GPSPhoto
-
+pip install gmplot --user
+pip install pandas --user
 
 
 To understand the structure, there are a few components:
