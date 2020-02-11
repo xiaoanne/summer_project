@@ -14,6 +14,7 @@ To understand the structure, there are a few components:
 1. Open file and extract the photo's information with open_file.py, available attributes contains GPS info such as 
     longtitude and latitude, photo's name and timestamp;
 2. Given the geo coordinates, draw_map.py can plot the points on google map;
-    
+3. To list all available attributes that the picture can offer, please run attr_list.py and change the picture's path,
+results for example pictures are stored in results folder;    
 
 
