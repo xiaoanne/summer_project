@@ -1,0 +1,16 @@
+PyQt5
+lxml
+sip
+labelImg
+Cython
+contextlib2
+pillow
+matplotlib
+#pycocotools
+numpy
+pandas
+tensorflow==1.15.0
+opencv-python
+protobuf-compiler
+pytest
+tensorboard

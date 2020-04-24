@@ -5,7 +5,7 @@ import cv2
 
 # construct the argument parse 
 parser = argparse.ArgumentParser(
-    description='Script to run MobileNet-SSD object detection network')
+    description='Script to run MobileNet-SSD object_detector detection network')
 parser.add_argument("--image", default= "img.jpeg", help="path to video file. If empty, camera's stream will be used")
 parser.add_argument("--prototxt", default="MobileNetSSD_deploy.prototxt",
                                   help='Path to text network file: '
@@ -51,7 +51,7 @@ frame_copy2 = frame.copy()
 cols = frame_resized.shape[1] 
 rows = frame_resized.shape[0]
 
-#For get the class and location of object detected, 
+#For get the class and location of object_detector detected,
 # There is a fix index for class, location and confidence
 # value in @detections array .
 for i in range(detections.shape[2]):
@@ -69,7 +69,7 @@ for i in range(detections.shape[2]):
         yLeftBottom_ = int(heightFactor* yLeftBottom)
         xRightTop_   = int(widthFactor * xRightTop)
         yRightTop_   = int(heightFactor * yRightTop)
-        # Draw location of object  
+        # Draw location of object_detector
         cv2.rectangle(frame_resized, (xLeftBottom, yLeftBottom), (xRightTop, yRightTop),
                       (0, 255, 0))
 

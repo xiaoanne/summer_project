@@ -1,0 +1,38 @@
+<annotation>
+	<folder>images</folder>
+	<filename>job_62_1_1 (12).jpg</filename>
+	<path>C:\Anne\DATA_SCIENCE\summer_project\try\own\images\job_62_1_1 (12).jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>480</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>pothole</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>124</xmin>
+			<ymin>221</ymin>
+			<xmax>197</xmax>
+			<ymax>256</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>pothole</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>324</xmin>
+			<ymin>180</ymin>
+			<xmax>424</xmax>
+			<ymax>243</ymax>
+		</bndbox>
+	</object>
+</annotation>
