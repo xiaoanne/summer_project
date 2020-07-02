@@ -6,7 +6,7 @@ import cv2
 # construct the argument parse 
 parser = argparse.ArgumentParser(
     description='Script to run MobileNet-SSD object_detector detection network')
-parser.add_argument("--image", default= "img.jpeg", help="path to video file. If empty, camera's stream will be used")
+parser.add_argument("--images", default= "img.jpeg", help="path to video file. If empty, camera's stream will be used")
 parser.add_argument("--prototxt", default="MobileNetSSD_deploy.prototxt",
                                   help='Path to text network file: '
                                        'MobileNetSSD_deploy.prototxt for Caffe model'
@@ -28,14 +28,14 @@ classNames = { 0: 'background',
 
 #Load the Caffe model 
 net = cv2.dnn.readNetFromCaffe(args.prototxt, args.weights)
-# Load image fro
+# Load images fro
 frame = cv2.imread(args.image)
 frame_resized = cv2.resize(frame,(300,300)) # resize frame for prediction
 heightFactor = frame.shape[0]/300.0
 widthFactor = frame.shape[1]/300.0 
-# MobileNet requires fixed dimensions for input image(s)
+# MobileNet requires fixed dimensions for input images(s)
 # so we have to ensure that it is resized to 300x300 pixels.
-# set a scale factor to image because network the objects has differents size. 
+# set a scale factor to images because network the objects has differents size.
 # We perform a mean subtraction (127.5, 127.5, 127.5) to normalize the input;
 # after executing this command our "blob" now has the shape:
 # (1, 3, 300, 300)

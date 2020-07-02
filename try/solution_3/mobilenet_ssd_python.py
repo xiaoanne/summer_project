@@ -40,9 +40,9 @@ while True:
     ret, frame = cap.read()
     frame_resized = cv2.resize(frame,(300,300)) # resize frame for prediction
 
-    # MobileNet requires fixed dimensions for input image(s)
+    # MobileNet requires fixed dimensions for input images(s)
     # so we have to ensure that it is resized to 300x300 pixels.
-    # set a scale factor to image because network the objects has differents size. 
+    # set a scale factor to images because network the objects has differents size.
     # We perform a mean subtraction (127.5, 127.5, 127.5) to normalize the input;
     # after executing this command our "blob" now has the shape:
     # (1, 3, 300, 300)

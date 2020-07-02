@@ -4,7 +4,7 @@ import random
 from PIL import Image
 
 
-root_dir = r"C:\Users\anne.wang\Downloads\project image\Chch-Nelson_Road_Thomas_Phone_Photos\\"
+root_dir = r"C:\Users\anne.wang\Downloads\project images\Chch-Nelson_Road_Thomas_Phone_Photos\\"
 new_dir = r"C:\Anne\DATA_SCIENCE\summer_project\100\\"
 
 filename = os.listdir(root_dir)
