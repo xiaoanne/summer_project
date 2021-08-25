@@ -9,7 +9,7 @@ matplotlib
 #pycocotools
 numpy
 pandas
-tensorflow==1.15.0
+tensorflow==2.5.1
 opencv-python
 protobuf-compiler
 pytest
